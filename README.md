@@ -142,13 +142,13 @@ Each line represents a separate MP3 file with its corresponding filename. Here's
 
 Above lines represent the list of songs we have included in the music folder.
 
-#### Software Requirements
+## Software Requirements
 Operating System (OS): Windows 7 and Above (64-bit)
 RAM: 4GB or more
 Graphics Card: N/A
 Processor: Intel i3 or Above
 
-#### How To Run the project
+## How To Run the project
 1. You need to install [python 3.8.0](https://www.python.org/downloads/release/python-380/)
 2. After installing the python IDLE open Command Prompt (CMD) on the device
 3. Check for the python version installed to verify Python is successfully installed.
