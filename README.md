@@ -140,7 +140,7 @@ Each line represents a separate MP3 file with its corresponding filename. Here's
 - "Tera Yaar Hoon Main": A song from the Bollywood movie "Sonu Ke Titu Ki Sweety".
 - "Tu Aake Dekhle": A song from the Bollywood movie "Mumbai Mirror".
 
-Above lines represent the list of songs we have included in the music folder.
+  Above lines represent the list of songs we have included in the music folder.
 
 ## Software Requirements
 Operating System (OS): Windows 7 and Above (64-bit)
