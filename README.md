@@ -158,3 +158,7 @@ Processor: Intel i3 or Above
 4. Using the code snippets given in the [Libraries Used](#libraries-used) install each and every library in the IDLE.
 5. Copy the the code in the IDLE
 6. To run the code press F5 key in IDLE. 
+
+## Authors
+[@Shubham Diwadkar](https://github.com/Shubham-Diwadkar)
+[@Beeru$](https://github.com/Darshan0902)
