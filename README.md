@@ -148,7 +148,7 @@ Processor: Intel i3 or Above
 
 ## How To Run the project
 1. You need to install [python 3.8.0](https://www.python.org/downloads/release/python-380/)
-2. After installing the python IDLE open Command Prompt (CMD) on the device
+2. After installing the python IDE open Command Prompt (CMD) on the device
 3. Check for the python version installed to verify Python is successfully installed.
   
   ```
@@ -156,8 +156,10 @@ Processor: Intel i3 or Above
   ```
   
 4. Using the code snippets given in the [Libraries Used](#libraries-used) install each and every library in the IDLE.
-5. Copy the the code in the IDLE
-6. To run the code press F5 key in IDLE. 
+5. Copy the the code in the IDE
+6. To run the code press F5 key in IDE.
+
+![Thankyou](https://github.com/Shubham-Diwadkar/Personal-Assistant/assets/125255910/408c557b-233d-4992-903a-e707e70a971d)
 
 ## Authors
 [@Shubham Diwadkar](https://github.com/Shubham-Diwadkar)
