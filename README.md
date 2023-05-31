@@ -159,6 +159,10 @@ Processor: Intel i3 or Above
 5. Copy the the code in the IDE
 6. To run the code press F5 key in IDE.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ![Thankyou](https://github.com/Shubham-Diwadkar/Personal-Assistant/assets/125255910/408c557b-233d-4992-903a-e707e70a971d)
 
 ## Authors
