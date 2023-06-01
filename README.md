@@ -28,8 +28,8 @@ The code is written in Python and utilizes several libraries and APIs to enable 
   ```
 - `random`: Library for generating random numbers and values.
   Syntax to install library:
- 
- ```
+  
+  ```
   pip install random
   ```
 - `speech_recognition`: Library for speech recognition.
