@@ -159,6 +159,10 @@ Processor: Intel i3 or Above
 5. Copy the the code in the IDE
 6. To run the code press F5 key in IDE.
 
+## Contributing
+
+Contributions are welcome! If you find any issues or want to add new features, please submit a pull request.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
