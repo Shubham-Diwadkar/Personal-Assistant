@@ -114,9 +114,9 @@ if __name__ == '__main__':
                         except Exception as ex:
                             print(ex)                                                                   # Print any exception that occurs during audio processing
                         #Automate mails:
-                        reciever='shubhamdiwadkar987@gmail.com'                                         # Set the email address of the recipient
+                        reciever='TYPE_YOUR_EMAIL_ADDRESS'                                              # Set the email address of the recipient
                         message=text                                                                    # Assign the captured text (message) to the variable "message"
-                        sender=yagmail.SMTP('shubhamdiwadkar952@gmail.com')                             # Create an SMTP object with the email address of the sender
+                        sender=yagmail.SMTP('TYPE_ANOTHER_ONE_OF_YOUR_EMAIL_ADDRESS')                   # Create an SMTP object with the email address of the sender
                         sender.send(to=reciever,subject='This is an automated mail',contents=message)   # Send the email to the recipient with the subject and contents specified
                     except:                                                                             # Handle any exceptions that occur during the email sending process
                         speak('Sorry Sir! I am unable to send your message at this moment!')            # Notify the user if there was an issue sending the email
