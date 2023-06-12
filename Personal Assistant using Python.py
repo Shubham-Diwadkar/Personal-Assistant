@@ -8,7 +8,6 @@ import datetime                                                                 
 import wolframalpha                                                                                     # Library for accessing the Wolfram|Alpha computational knowledge engine
 import os                                                                                               # Library for interacting with the operating system
 import sys                                                                                              # Library for system-specific parameters and functions
-from playsound import playsound                                                                         # Library for playing sound files
 import yagmail                                                                                          # Library for sending emails using Gmail
 import pygame                                                                                           # Library for game development and multimedia applications
 
@@ -114,12 +113,12 @@ if __name__ == '__main__':
                         except Exception as ex:
                             print(ex)                                                                   # Print any exception that occurs during audio processing
                         #Automate mails:
-                        reciever='TYPE_YOUR_EMAIL_ADDRESS'                                              # Set the email address of the recipient
+                        reciever='ENTER_YOUR_EMAIL_ID'                                                  # Set the email address of the recipient
                         message=text                                                                    # Assign the captured text (message) to the variable "message"
-                        sender=yagmail.SMTP('TYPE_ANOTHER_ONE_OF_YOUR_EMAIL_ADDRESS')                   # Create an SMTP object with the email address of the sender
+                        sender=yagmail.SMTP('ENTER_YOUR_ANOTHER_EMAIL_ID')                              # Create an SMTP object with the email address of the sender
                         sender.send(to=reciever,subject='This is an automated mail',contents=message)   # Send the email to the recipient with the subject and contents specified
                     except:                                                                             # Handle any exceptions that occur during the email sending process
-                        speak('Sorry Sir! I am unable to send your message at this moment!')            # Notify the user if there was an issue sending the email
+                        speak("Sorry I am unable to send your message at this moment!")                 # Notify the user if there was an issue sending the email
 
 
         # Stop the program if the user wants to exit
@@ -140,8 +139,20 @@ if __name__ == '__main__':
         # Play random music file
         elif 'play music' in query:
             pygame.init()                                                                               # Initialize Pygame
-            path = "PLEASE_ENTER_YOUR_MUSIC_FOLDER_PATH"                                                # Path to your music folder
-            music_files = os.listdir(path)                                                              # List all the music files in the directory
+            user_choice = input("Do you want to specify a directory path? (yes/no): ")
+            if user_choice.lower() == "yes":
+                # If the user wants to specify a directory path, prompt them to enter it
+                path = input("Enter the directory path: ")
+            else:
+                # If the user does not want to specify a directory path, use a default directory
+                path = os.path.join(os.environ["USERPROFILE"],"Music")
+            
+            music_files = os.listdir(path)
+            if len(music_files) == 0:
+                print("No music files found in the specified directory.")
+                pygame.quit()
+                exit()                                                              # List all the music files in the directory
+            
             random_music = random.choice(music_files)                                                   # Pick a random music file
             pygame.mixer.music.load(os.path.join(path, random_music))                                   # Load the music file
             pygame.mixer.music.play()                                                                   # Play the music file
