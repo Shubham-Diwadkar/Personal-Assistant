@@ -87,7 +87,7 @@ The code is written in Python and utilizes several libraries and APIs to enable 
   pip install pygame
   ```
   
-  - `keyrings`: Library for mailing through Gmail. This will ask you for your password, you need to give the google generated password (NOT YOUR OWN GOOGLE ACCOUNT PASSWORD).
+- `keyrings`: Library for mailing through Gmail. This will ask you for your password, you need to give the google generated password (NOT YOUR OWN GOOGLE ACCOUNT PASSWORD).
     Syntax to install keyring library:
     ```
     pip install keyring
