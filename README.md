@@ -98,11 +98,10 @@ The code is written in Python and utilizes several libraries and APIs to enable 
    pip install pyaudio
    ```
 [Note: If some libraries do not istall try updating your pip.
-Syntax to upgrade your pip
+Syntax to upgrade your pip]
 ```
 python -m pip install --upgrade pip
 ```
-]
 
 ### Functionality
 1. **Text-to-Speech**: The `pyttsx3` library is used to convert text into speech. The assistant speaks out the responses or prompts to the user's commands.
