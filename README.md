@@ -127,7 +127,7 @@ Please note that some functionalities, such as email sending or music playback, 
 
 Feel free to explore and modify the code to customize the assistant's behavior and add more functionalities as per your requirements.
 
-**Note:** Remember to replace `'YOUR_APP_ID'` and `'PLEASE_ENTER_YOUR_MUSIC_FOLDER_PATH'` with your own values or paths as indicated in the code comments.
+**Note:** Remember to replace `'YOUR_APP_ID'` with your own value as indicated in the code comments.
 
 Have fun experimenting with your voice-controlled personal assistant, LARVIS!
 
