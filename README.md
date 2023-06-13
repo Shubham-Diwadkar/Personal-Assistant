@@ -158,8 +158,11 @@ Each line represents a separate MP3 file with its corresponding filename. Here's
 
 ## Software Requirements
 Operating System (OS): Windows 7 and Above (64-bit)
+
 RAM: 4GB or more
+
 Graphics Card: N/A
+
 Processor: Intel i3 or Above
 
 ## How To Run the project
