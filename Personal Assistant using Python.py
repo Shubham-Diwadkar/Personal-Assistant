@@ -151,7 +151,7 @@ if __name__ == '__main__':
             if len(music_files) == 0:
                 print("No music files found in the specified directory.")
                 pygame.quit()
-                exit()                                                              # List all the music files in the directory
+                exit()                                                                                  # List all the music files in the directory
             
             random_music = random.choice(music_files)                                                   # Pick a random music file
             pygame.mixer.music.load(os.path.join(path, random_music))                                   # Load the music file
