@@ -90,35 +90,29 @@ if __name__ == '__main__':
         elif "what\'s up" in query or 'how are you' in query:
             stMsgs = ['Just doing my thing!', 'I am fine!', 'Nice!', 'I am nice and full of energy']
             speak(random.choice(stMsgs))
-
-        # Send an email
-        elif 'email' in query:
+        
+        #sending email
+        elif 'send email' in query:
             speak('Who is the recipient? ')
-            recipient = myCommand()
+            speak('The mail password of the sender should be provided by App passwords in Google Security')
+            Recipient_Username=input("enter the email id of user to send:")
+            Your_Username=input("Enter your emaild id:")
+            Your_Password=input("Enter your password:")
             
-            if 'friend' in recipient:                                                                   # Check if the word "friend" is present in the recipient    
-                recognizer=sr.Recognizer()                                                              # Create a speech recognizer object
-                with sr.Microphone() as source:                                                         # Use the microphone as the audio source
-                    try:
-                        speak('Clearing background noise..')
-                        speak("Try saying message:")
-                        try:
-                            recognizer.adjust_for_ambient_noise(source,duration=1)                      # Adjust for background noise
-                            speak("waiting for your message...")
-                            recordedaudio=recognizer.listen(source)                                     # Listen to the audio input
-                            speak('Done recording..!')
-                            speak('Printing the message...')
-                            text=recognizer.recognize_google(recordedaudio,language='en-US')            # Convert the audio to text
-                            print('Your message:{}'.format(text))                                       # Print the captured message
-                        except Exception as ex:
-                            print(ex)                                                                   # Print any exception that occurs during audio processing
-                        #Automate mails:
-                        reciever='ENTER_YOUR_EMAIL_ID'                                                  # Set the email address of the recipient
-                        message=text                                                                    # Assign the captured text (message) to the variable "message"
-                        sender=yagmail.SMTP('ENTER_YOUR_ANOTHER_EMAIL_ID')                              # Create an SMTP object with the email address of the sender
-                        sender.send(to=reciever,subject='This is an automated mail',contents=message)   # Send the email to the recipient with the subject and contents specified
-                    except:                                                                             # Handle any exceptions that occur during the email sending process
-                        speak("Sorry I am unable to send your message at this moment!")                 # Notify the user if there was an issue sending the email
+            try:
+                speak('What should I say? ')
+                content = input("please type the content to send:")
+        
+                server = smtplib.SMTP('smtp.gmail.com', 587)
+                server.ehlo()
+                server.starttls()
+                server.login(Your_Username, Your_Password)
+                server.sendmail(Your_Username, Recipient_Username, content)
+                server.close()
+                speak('Email sent!')
+
+            except:
+                speak('Sorry Sir! I am unable to send your message at this moment!')
 
 
         # Stop the program if the user wants to exit
