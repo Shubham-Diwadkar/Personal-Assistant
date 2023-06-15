@@ -1,7 +1,6 @@
 # Importing Libraries for the code
 import pyttsx3                                      # Import module for text-to-speech synthesis
 import webbrowser                                   # Import module for opening web browsers
-import smtplib                                      # Import module for sending emails using SMTP
 import random                                       # Import module for generating random numbers or selecting random items
 import speech_recognition as sr                     # Import module for speech recognition
 import wikipedia                                    # Import module for accessing Wikipedia articles
